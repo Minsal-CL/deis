@@ -109,3 +109,31 @@ Description: "Las personas en situación de discapacidad son personas que, en re
   * valueCode 1..1 MS
   * valueCode from VSValDesempComunDisca
   * valueCode ^short = "Códigos de valoración de discapacidad"
+
+Extension:   NivelIntruccion
+Id:          NivelInstrucion
+Title:       "Nivel Instrucción"
+Description: "El nivel de instrucción se refiere al último año aprobado en el ciclo de educación más avanzado que declare haber cursado la persona en el Sistema Educativo."
+* extension contains
+	Ucurso 1..* MS and
+	Univel 1..1 MS
+* url MS
+
+* extension[Ucurso] ^short = "Evaluación de discapacidad daciente"
+* extension[Ucurso]  ^definition = "Situación de discapacidad del paciente"
+//* extension[EvalDesemp] 0..1 MS
+  * url MS
+  * value[x] only code
+  * valueCode 1..1 MS
+  * valueCode from VSEvalDesempComunDisca
+  * valueCode ^short = "Códigos de evaluación de discapacidad"
+    
+
+* extension[ValDesemp] ^short = "Valoración de discapacidad paciente"
+* extension[ValDesemp] ^definition = "Valoración de discapacidad del paciente"
+//* extension[EvalDesemp] 0..1 MS
+  * url MS
+  * value[x] only code
+  * valueCode 1..1 MS
+  * valueCode from VSValDesempComunDisca
+  * valueCode ^short = "Códigos de valoración de discapacidad"

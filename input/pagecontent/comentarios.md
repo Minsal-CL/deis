@@ -38,5 +38,14 @@
 * ante la pregunta si padece o no de discapacidad la propiuesta es que en el perfil se deja el elemento como optativo. El llenar con el codigo se asume que la respuesta es si
 * si bien la estructura sugerida es en texto, dado que ya se cuenta con estructuras en tablas codificadas se sugiere el uso de ellas y de una estructura de extensión para usarlas en un perfil
 
+## Nivel de Instrucción
+
+* Si bien existen dos tipos de códigos, no se entiende la estructura final en texto libre
+* se indica que el nivel de instrucción debe ir en la identificación del Paciente, para motivos de estructura FHIR se agregará en una extensión raiz externa
+
+### Ultimo Curso aprobado
+
+* Por exigencia de FHIR a esta tabla se le agregó glosa
+
 
 

@@ -5,11 +5,13 @@ Title: "Tipos de Documentos para Paciente DEIS"
 Description: "Tipos de Documentos para identificación según tabla 820."
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 
 * codes from system CSTiposDocumentosDEIS
 
@@ -62,6 +64,7 @@ Title: "Códigos para sexo biológico en Chile"
 Description: "Códigos para sexo biológico en Chile según tabla 820."
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -100,6 +103,7 @@ Title: "Identidad de Género"
 Description: "Códigos para Identidad de Género DEIS"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -137,6 +141,7 @@ Title: "Estado Civil"
 Description: "El estado civil es la situación de un individuo en la sociedad, que deriva principalmente de sus relaciones de familia, y que lo habilita para ejercer derechos y contraer obligaciones civiles."
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -179,6 +184,7 @@ Title: "Pueblo Indígena u Originarioi"
 Description: "Los Pueblos Indígenas u Originarios en Chile, son los descendientes de las agrupaciones humanas que existen en el territorio nacional desde tiempos precolombinos"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -220,6 +226,7 @@ Title: "Religiones o Cultos"
 Description: "Códigos de Religiones o Cultos declarados"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -259,6 +266,7 @@ Title: "Valoración de Desempeño en Comunidad (IVADEC-CIF)"
 Description: "Valoración de Desempeño en Comunidad (IVADEC-CIF)"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -298,6 +306,7 @@ Title: "Valoración de Desempeño en Comunidad (IVADEC-CIF)"
 Description: "Valoración de Desempeño en Comunidad (IVADEC-CIF)"
 * ^version = "1.0.0"
 * ^status = #active
+* ^experimental = true
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -305,3 +314,85 @@ Description: "Valoración de Desempeño en Comunidad (IVADEC-CIF)"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system CSEvalDesempComunDisca
+
+
+CodeSystem:  CSUCursoAprobado
+Id: CSUCursoAprobado
+Title: "Ultimo Curso Aprobado"
+Description: "Categoría del último curso aprobado"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #0 "Sin Curso"
+* #1 "1o Básico"
+* #2 "2o Básico"
+* #3 "3ro Básico"
+* #4 "4o Básico"
+* #5 "5o Básico"
+* #6 "6o Básico"
+* #7 "7mo Básico"
+* #8 "8vo Básico"
+
+
+
+ValueSet: VSUCursoAprobado
+Id: VSUCursoAprobado
+Title: "Ultimo Curso Aprobado"
+Description: "Categoría del último curso aprobado"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSUCursoAprobado
+
+CodeSystem:  CSUNivelAprob
+Id: CSUNivelAprob
+Title: "Ultimo nivel aprobado"
+Description: "Código del último nivel aprobado"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Preescolar"
+* #2 "Especial o Diferencial "
+* #3 "Básica o Primaria"
+* #4 "Media o Secundaria" 
+* #5 "Educación Superior"
+* #6 "Sin Instrucción"
+* #97 "No Recuerda"
+* #98 "No Responde"
+
+
+
+CodeSystem:  CSUNivelAprob
+Id: CSUNivelAprob
+Title: "Ultimo nivel aprobado"
+Description: "Código del último nivel aprobado"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSUNivelAprob
