@@ -52,17 +52,3 @@ Description: "Variable dirección"
 * extension[limiteUrbano] ^shor = "limite urbano"
 
 
-
-
-Extension:   limiteUrbano
-Id:          limiteUrbano
-Title:       "Limite urbano censal de la region"
-Description: "Limite urbano censal de la region"
-* value[x] only CodeableConcept
-* value[x] ^short = "Codigo limite urbano"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * code from VSCodigoLimiteUrbanoCL
-  * system 0..1 MS
-  * display 0..1 MS

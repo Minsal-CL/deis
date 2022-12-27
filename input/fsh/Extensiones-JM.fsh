@@ -1,4 +1,18 @@
+Extension:   limiteUrbano
+Id:          limiteUrbano
+Title:       "Limite urbano censal de la region"
+Description: "Limite urbano censal de la region"
+* value[x] only CodeableConcept
+* value[x] ^short = "Codigo limite urbano"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSCodigoLimiteUrbanoCL
+  * system 0..1 MS
+  * display 0..1 MS
 
+
+/*
 Extension: NombreSocial
 Id: NombreSocial
 Title: "Nombre Social de Paciente"
@@ -109,3 +123,6 @@ Description: "Las personas en situación de discapacidad son personas que, en re
   * valueCode 1..1 MS
   * valueCode from VSValDesempComunDisca
   * valueCode ^short = "Códigos de valoración de discapacidad"
+
+
+*/
