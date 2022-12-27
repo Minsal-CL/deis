@@ -47,5 +47,23 @@
 
 * Por exigencia de FHIR a esta tabla se le agregó glosa
 
+## Ocupaciones
+
+* Si bien la explicación de **Ocupaciones** es muy amplia nos quedamos con la tabla final que define la extensión
+
+## Previsión
+
+* en este apartado se veran los ValueSets y CodeSystems compatibles con el estándar y las extensiones necesarias. 
+* Considerar que para asentar estos datos, en FHIR ellos no van sobre el recurso Patient sino que van sobre un perfil de Coverage[https://www.hl7.org/FHIR/coverage.html] e InsurancePlan[https://www.hl7.org/FHIR/insuranceplan.html], los cuales en esta primnera etapa no perfilaremos aca
+* La previsión se sujiere ajustar a Coverage.type
+
+## Datos de Contacto
+
+### Teléfono
+
+* Si bien la estructura de teléfono se pude agregar al estándar como se indica, sugerimos usar la del estandar de por si que es suficientemente robusta contacto[https://www.hl7.org/FHIR/datatypes.html#ContactPoint]. Este mismo tipo de dato es aplicable a correo electrónico
+* Para adjuntar el número de telefono de un contacto, se sugiere seguir ese mismo formato pero dentro del elemento **Patient.contact.telecom** en donde se pueden agregar datos de acompañante del paciente, entre los cuales figura el telecom, además del tipo de acompañante
+
+
 
 

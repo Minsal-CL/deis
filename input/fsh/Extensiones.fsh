@@ -95,20 +95,27 @@ Description: "Las personas en situación de discapacidad son personas que, en re
 * extension[EvalDesemp] ^definition = "Situación de discapacidad del paciente"
 //* extension[EvalDesemp] 0..1 MS
   * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSEvalDesempComunDisca
-  * valueCode ^short = "Códigos de evaluación de discapacidad"
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSEvalDesempComunDisca"
+    * coding.code 1..1 MS
+    * coding.code from VSEvalDesempComunDisca (required)
+    * coding.display 1..1 MS
+    
+  
     
 
 * extension[ValDesemp] ^short = "Valoración de discapacidad paciente"
 * extension[ValDesemp] ^definition = "Valoración de discapacidad del paciente"
 //* extension[EvalDesemp] 0..1 MS
   * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSValDesempComunDisca
-  * valueCode ^short = "Códigos de valoración de discapacidad"
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSValDesempComunDisca"
+    * coding.code 1..1 MS
+    * coding.code from VSValDesempComunDisca (required)
+    * coding.display 1..1 MS
+  
 
 Extension:   NivelIntruccion
 Id:          NivelInstrucion
@@ -119,21 +126,56 @@ Description: "El nivel de instrucción se refiere al último año aprobado en el
 	Univel 1..1 MS
 * url MS
 
-* extension[Ucurso] ^short = "Evaluación de discapacidad daciente"
-* extension[Ucurso]  ^definition = "Situación de discapacidad del paciente"
-//* extension[EvalDesemp] 0..1 MS
-  * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSEvalDesempComunDisca
-  * valueCode ^short = "Códigos de evaluación de discapacidad"
-    
+* extension[Ucurso] ^short = "Nivel de Instrucción del paciente"
+* extension[Ucurso]  ^definition = "Estado educacional del paciente"
 
-* extension[ValDesemp] ^short = "Valoración de discapacidad paciente"
-* extension[ValDesemp] ^definition = "Valoración de discapacidad del paciente"
-//* extension[EvalDesemp] 0..1 MS
   * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSValDesempComunDisca
-  * valueCode ^short = "Códigos de valoración de discapacidad"
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSUCursoAprobado"
+    * coding.code 1..1 MS
+    * coding.code from VSUCursoAprobado (required)
+    * coding.display 1..1 MS
+
+* extension[Univel] ^short = "Ultimo nivel de instrucción"
+* extension[Univel] ^definition = "último nivel educacional completado"
+
+  * url MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSUNivelAprob"
+    * coding.code 1..1 MS
+    * coding.code from VSUNivelAprob (required)
+    * coding.display 1..1 MS
+  
+Extension:   Ocupaciones
+Id:          Ocupaciones
+Title:       "Ocupaciones del paciente"
+Description: "Definición de la Ocupación y de la Ocupación Detallada del paciente"
+* extension contains
+	Ocupa 1..* MS and
+	OcupaDet 1..1 MS
+* url MS
+
+* extension[Ocupa] ^short = "Ocupaciones laborales que el paciente posee"
+* extension[Ocupa]  ^definition = "Ocupaciones y ocupaciones detalladas que un paciente declara"
+
+  * url MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSOcupaciones"
+    * coding.code 1..1 MS
+    * coding.code from VSOcupaciones (required)
+    * coding.display 1..1 MS
+      
+
+* extension[OcupaDet] ^short = "Detalles de Ocupación"
+* extension[OcupaDet] ^definition = "Ocupación detallada del Paciente"
+
+  * url MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept 1..1 MS
+    * coding.system = "CSOcupacionesDet"
+    * coding.code 1..1 MS
+    * coding.code from VSOcupacionesDet (required)
+    * coding.display 1..1 MS
