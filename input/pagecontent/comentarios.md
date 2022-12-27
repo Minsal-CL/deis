@@ -64,6 +64,12 @@
 * Si bien la estructura de teléfono se pude agregar al estándar como se indica, sugerimos usar la del estandar de por si que es suficientemente robusta contacto[https://www.hl7.org/FHIR/datatypes.html#ContactPoint]. Este mismo tipo de dato es aplicable a correo electrónico
 * Para adjuntar el número de telefono de un contacto, se sugiere seguir ese mismo formato pero dentro del elemento **Patient.contact.telecom** en donde se pueden agregar datos de acompañante del paciente, entre los cuales figura el telecom, además del tipo de acompañante
 
+### Tipo de Sistema de Salud
+
+* se generó el VS y CS sin embargo, sería bueno contar con mas alcancer de donde y como ocupar estos códigos para sugerir un perfil o la generación de una extensión
+
+### Modalidad de Atención
+
 
 
 

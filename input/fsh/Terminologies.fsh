@@ -943,7 +943,6 @@ Description: "Código asociados al tipo de previsión a la que el paciente perte
 * #99 "DESCONOCIDO"
 
 
-
 ValueSet: VSPrevision
 Id: VSPrevision
 Title: "Ultimo nivel aprobado"
@@ -958,3 +957,38 @@ Description: "Código del último nivel aprobado"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system  CSPrevision
+
+CodeSystem:  CSSistSalud
+Id: CSSistSalud
+Title: "Tipo de Sistema de Salud"
+Description: "Código asociados al tipo de sistema de salud en el cual se atiende el paciente"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "Público" 
+* #2 "Privado" 
+* #3 "Fuerzas Armadas y de Orden y Seguridad Pública"
+
+
+ValueSet: VSSistSalud
+Id: VSSistSalud
+Title: "Tipo de Sistema de Salud"
+Description: "Código asociados al tipo de sistema de salud en el cual se atiende el paciente"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSSistSalud
