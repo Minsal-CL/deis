@@ -181,3 +181,38 @@ Description: "Definición de la Ocupación y de la Ocupación Detallada del paci
     * coding.display 1..1 MS
 
   
+Extension:   TramoFonasa
+Id:          TramoFonasa
+Title:       "Extensión para definir el tramo Fonasa"
+Description: "Es la clasificación que realiza FONASA de acuerdo al nivel de ingreso mensual que la persona percibe."
+  
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTramosFonasa"
+  * coding.code 1..1 MS
+  * coding.code from VSTramosFonasa (required)
+  * coding.display 1..1 MS
+
+Extension:   PrestPublic
+Id:          PrestPublic
+Title:       "Extensión para definir si la organización es Pública. De no serlo se asume es privada"
+Description: "Es la clasificación que realiza FONASA de acuerdo al nivel de ingreso mensual que la persona percibe."
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTramosFonasa"
+  * coding.code 1..1 MS
+  * coding.code from VSTramosFonasa (required)
+  * coding.display 1..1 MS
+
+Extension:   InstExtranjeraEDu
+Id:          InstExtranjeraEDu
+Title:       "Determinación de Instutución extranjera de educación"
+Description: "Extensión que permite escribir en texto libre el nombre de una institución extranjera que otorgó certificado profesional"
+* url MS
+* value[x] only string
+* valueString 1..1 MS
+* valueString ^short = "Nombre de Institución"
+  
+

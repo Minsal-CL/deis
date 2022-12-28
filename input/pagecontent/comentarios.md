@@ -70,6 +70,44 @@
 
 ### Modalidad de Atención
 
+* Se generá la tabla, sin embargo no se genera extensión pues habría que evaluar si ese elemento puede ser parte de un perfil de recurso *Encounter* o *Apointment* u otro que se trabaje para estos fines.
+
+### Tramos Fonasa
+
+* se genera el VS y CS además de una extensión
+* se sugiere hacer uso de la extención perfilando el recurso *coverage*
+
+### Arancel FONASA
+
+* SE genera el VS y CS en base a dos códigos de ejemplo. Esta tabla cumple con características de terminología se requieren los fuentes.
+* Se requiere para el uso de estos elementos, el considerar el perfilamiento de *Procedimientos Arancelados FONASA* en base al recurso *Procedure*
+
+### Otras Leyes Previsionales de Salud
+
+* Se genera VS y CS
+* se debe considerar agregarlas en un perfil relacionado con el recurso *Coverage*. Se sugiere un perfil denominado **Leyes previsionales**
+
+### Estructura Organizacional Sistema de Salud
+
+* Tanto para *Secretaría Regional Ministerial de Salud* como para *Servicios de Salud* se propone usar el perfil *CL Organización* de la Core-Cl agregando el elemento Organization.type
+* Lo anterior implicaria perfilar un *Organización-SS* *Organización-SecretariaReg*, *Organizazión-Prestador*
+
+* Se genera un VS y CS para las secretarías, los Servicios 
+
+### Prestadores de Salud
+
+* no se considerará la tabla “Tipo de Prestadores”, pues cuando se defina un prestador individual se usará un recurso *Practitioner* y si el prestador es institucional se usará un recurso de tipo *organization*
+
+#### Prestador Individual
+
+* los datos requeridos para el prestador individual son compatibles con el perfil de la core CL-Prestador[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CorePrestadorCl.html]
+* a ese perfil se debería agregar la extensión de nacionalidad, también definida en la Core-CL en la extención Código Identificación de Países[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html]
+* Tanto *dirección* como *contacto* se define el formato en esta Guía
+* Para la *mensión* se agrega un slice en qualification adicionando a certificado profesional y especialidad
+* se crea VS y CS de Profesión y Institución educacional
+* *Nº de Registro Nacional de Prestadores Individuales* considerado en la identificación del Prestador-CL[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CorePrestadorCl.html]
+* La fecha de emisión de certificado es parte del perfil sin embargo y tal como se viera en la fecha de nacimiento por estandar el modelo de fecha es año-mes-dia, lo cual no es reemplazable
+* se crea extensión en caso de institución extranjera
 
 
 

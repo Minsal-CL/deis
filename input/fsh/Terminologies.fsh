@@ -992,3 +992,424 @@ Description: "Código asociados al tipo de sistema de salud en el cual se atiend
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system  CSSistSalud
+
+CodeSystem:  CSModAtencion
+Id: CSModAtencion
+Title: "Modalidad de Atención FONASA"
+Description: "Código asociados al tipo de modalidad en la cual se atiende el paciente FONASA"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "MAI Modalidad de Atención Institucional" 
+* #2 "MLE Modalidad de Atención Libre Elección" 
+
+
+
+ValueSet: VSModAtencion
+Id: VSModAtencion
+Title: "Modalidad de Atención FONASA"
+Description: "Código asociados al tipo de modalidad en la cual se atiende el paciente FONASA"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSModAtencion
+
+
+
+CodeSystem:  CSTramosFonasa
+Id: CSTramosFonasa
+Title: "Tramos de FONASA"
+Description: "Código asociados a el tramo al cual pertenece el paciente a FONASA"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #A "TRAMO A"
+* #B "TRAMO B" 
+* #C "TRAMO C"
+* #D "TRAMO D"
+
+ValueSet: VSTramosFonasa
+Id: VSTramosFonasa
+Title: "Tramos de FONASA"
+Description: "Código asociados a el tramo al cual pertenece el paciente a FONASA"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSTramosFonasa
+
+
+CodeSystem:  CSArancelFonasa
+Id: CSArancelFonasa
+Title: "Arancel de FONASA"
+Description: "Código asociados a arancel FONASA"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #0101101 "Consulta o control médico integral en atención primaria."
+* #0101102 "Consulta o control médico integral en especialidades (Hosp. Mediana complejidad)"
+
+ValueSet:  VSArancelFonasa
+Id: VSArancelFonasa
+Title: "Arancel de FONASA"
+Description: "Código asociados a arancel FONASA"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSArancelFonasa
+
+
+CodeSystem:  CSLeyesPrevisionales
+Id: CSLeyesPrevisionales
+Title: "Leyes Previsionales"
+Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Ley Nº18.490: Accidentes de Transporte"
+* #2 "Ley Nº 16.744: Accidentes del Trabajo y Enfermedades Profesionales"
+* #3 "Ley Nº 16.744: Accidente Escolar"
+* #4 "Ley Nº 19.650/99 de Urgencia"
+* #5 "Ley 19.992 PRAIS"
+* #6 "Ley Nº 19.966 Régimen General de Garantías en Salud GES" 
+* #7 "Ley Nº20.850 Ricarte Soto"
+* #8 "Ley N° 21.030 de Despenalización de la Interrupción Voluntaria del Embarazo en Tres Causales."
+* #96 "Ninguna"
+* #97 "No recuerda"
+
+
+ValueSet:  VSLeyesPrevisionales
+Id: VSLeyesPrevisionales
+Title: "Leyes Previsionales"
+Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSLeyesPrevisionales
+
+CodeSystem:  CSSecRegMin
+Id: CSSecRegMin
+Title: "Secretaría Regional Ministerial de Salud"
+Description: "Códigos asociados a las Secretarías Regionales Ministeriales de Salud"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #15 "SEREMI De Arica y Parinacota"
+* #1  "EREMI De Tarapacá"
+* #2  "EREMI De Antofagasta"
+* #3  "EREMI De Atacama"
+* #4  "EREMI De Coquimbo"
+* #5  "EREMI De Valparaíso"
+* #13 "SEREMI Metropolitana de Santiago"
+* #6  "EREMI Del Libertador Gral. B. O'Higgins" 
+* #7  "EREMI Del Maule"
+* #16 "SEREMI Del Ñuble"
+* #8  "EREMI Del Biobío"
+* #9  "EREMI De La Araucanía"
+* #14 "SEREMI De Los Ríos"
+* #10 "SEREMI De Los Lagos"
+* #11 "SEREMI De Aisén del General Carlos Ibáñez del Campo"
+* #12 "SEREMI De Magallanes y la Antártica Chilena"
+
+
+ValueSet:  VSSecRegMin
+Id: VSSecRegMin
+Title: "Secretaría Regional Ministerial de Salud"
+Description: "Códigos asociados a las Secretarías Regionales Ministeriales de Salud"
+
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSSecRegMin
+
+CodeSystem:  CSServSalud
+Id: CSServSalud
+Title: "Servivicios de Salud"
+Description: "Códigos asociados a los Servicios de Salud"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1  "Servicio de Salud Arica"
+* #2  "Servicio de Salud Iquique" 
+* #3  "Servicio de Salud Antofagasta"
+* #4  "Servicio de Salud Atacama"
+* #5  "Servicio de Salud Coquimbo"
+* #6  "Servicio de Salud Valparaíso San Antonio"
+* #7  "Servicio de Salud Viña del Mar Quillota"
+* #8  "Servicio de Salud Aconcagua"
+* #9  "Servicio de Salud Metropolitano Norte"
+* #10 "Servicio de Salud Metropolitano Occidente"
+* #11 "Servicio de Salud Metropolitano Central"
+* #12 "Servicio de Salud Metropolitano Oriente"
+* #13 "Servicio de Salud Metropolitano Sur"
+* #14 "Servicio de Salud Metropolitano Sur Oriente" 
+* #15 "Servicio de Salud Del Libertador B. O’Higgins"
+* #16 "Servicio de Salud Del Maule"
+* #17 "Servicio de Salud Ñuble"
+* #18 "Servicio de Salud Concepción"
+* #19 "Servicio de Salud Talcahuano"
+* #20 "Servicio de Salud Biobío"
+* #21 "Servicio de Salud Araucanía Sur"
+* #22 "Servicio de Salud Valdivia"
+* #23 "Servicio de Salud Osorno"
+* #24 "Servicio de Salud Del Reloncaví"
+* #25 "Servicio de Salud Aisén"
+* #26 "Servicio de Salud Magallanes"
+* #28 "Servicio de Salud Arauco"
+* #29 "Servicio de Salud Araucanía Norte" 
+* #33 "Servicio de Salud Chiloé"
+* #95 "No Aplica"
+
+
+ValueSet:  VSServSalud
+Id: VSServSalud
+Title: "Servivicios de Salud"
+Description: "Códigos asociados a los Servicios de Salud"
+
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSServSalud
+
+
+CodeSystem:  CSTitProf
+Id: CSTitProf
+Title: "Título Profesional"
+Description: "Códigos de titulos profesionales listados en Chile"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1	"MÉDICO CIRUJANO"
+* #2	"CIRUJANO DENTISTA"
+* #3	"ENFERMERAS(OS)"
+* #4	"ENFERMERAS(OS) MATRONAS(ES)"
+* #5	"MATRONAS(ES)"
+* #6	"TECNÓLOGOS MÉDICOS"
+* #7	"PSICÓLOGOS/AS"
+* #8	"KINESIÓLOGOS/AS"
+* #9	"FARMACÉUTICOS Y QUÍMICO-FARMACÉUTICOS"
+* #10	"BIOQUÍMICOS"
+* #11	"NUTRICIONISTAS"
+* #12	"FONOAUDIÓLOGOS/AS"
+* #13	"TERAPEUTAS OCUPACIONALES"
+* #14	"AUXILIARES PARAMÉDICOS DE ALIMENTACIÓN"
+* #15	"A.P. DE RADIOLOGÍA, RADIOTERAPIA, LAB"
+* #16	"AUXILIARES PARAMÉDICOS DE ODONTOLOGÍA"
+* #17	"AUXILIARES PARAMÉDICOS DE FARMACIA"
+* #18	"AUXILIARES DE ENFERMERÍA"
+* #19	"TÉCNICO EN NIVEL SUPERIOR EN SALUD"
+* #20	"TÉCNICOS EN SALUD"
+* #21	"TÉCNICOS NIVEL MEDIO EN SALUD"
+* #22	"LABORATORISTAS DENTALES"
+* #23	"PODÓLOGOS/AS"
+* #24	"ÓPTICOS/AS"
+* #25	"CONTACTÓLOGOS/AS"
+* #26	"HOMEÓPATAS"
+* #27	"ACUPUNTURISTAS"
+* #28	"NATURÓPATAS"
+* #29	"COSMETÓLOGOS/AS"
+* #99	"DESCONOCIDA"
+
+
+
+ValueSet:  VSTitProf
+Id: VSTitProf
+Title: "Título Profesional"
+Description: "Códigos de titulos profesionales listados en Chile"
+
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSTitProf
+
+CodeSystem:  CSInstEmisorTit
+Id: CSInstEmisorTit
+Title: "Institución Emisora de Título Profesional"
+Description: "Códigos de Centros Educacionales, Institutos, Universidades, etc que emiten certificados profesionles"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1	"PONTIFICIA UNIVERSIDAD CATÓLICA DE VALPARAÍSO"
+* #2	"UNIVERSIDAD ACADEMIA DE HUMANISMO CRISTIANO"
+* #3	"UNIVERSIDAD ADVENTISTA DE CHILE"
+* #4	"UNIVERSIDAD ADOLFO IBÁÑEZ"
+* #5	"UNIVERSIDAD ALBERTO HURTADO"
+* #6	"UNIVERSIDAD ANDRÉS BELLO"
+* #7	"UNIVERSIDAD ARTURO PRAT"
+* #8	"UNIVERSIDAD AUSTRAL DE CHILE"
+* #9	"UNIVERSIDAD AUTÓNOMA DE CHILE"
+* #10	"UNIVERSIDAD BERNARDO O HIGGINS"
+* #11	"UNIVERSIDAD CATÓLICA DE LA SANTÍSIMA CONCEPCIÓN"
+* #12	"UNIVERSIDAD CATÓLICA SILVA HENRÍQUEZ"
+* #13	"UNIVERSIDAD CATÓLICA DE TEMUCO"
+* #14	"UNIVERSIDAD CATÓLICA DEL MAULE"
+* #15	"UNIVERSIDAD CATÓLICA DEL NORTE"
+* #16	"UNIVERSIDAD CENTRAL DE CHILE"
+* #17	"UNIVERSIDAD DE ANTOFAGASTA"
+* #18	"UNIVERSIDAD DE ARTE Y CIENCIAS SOCIALES ARCIS"
+* #19	"UNIVERSIDAD DE ARTES, CIENCIAS Y COMUNICACIÓN UNIACC"
+* #20	"UNIVERSIDAD DE ATACAMA"
+* #21	"UNIVERSIDAD UCINF"
+* #22	"UNIVERSIDAD DE CHILE"
+* #23	"UNIVERSIDAD DE CONCEPCIÓN"
+* #24	"UNIVERSIDAD DE LA FRONTERA"
+* #25	"UNIVERSIDAD DE LA SERENA"
+* #26	"UNIVERSIDAD DE LAS AMÉRICAS"
+* #27	"UNIVERSIDAD DE LOS ANDES"
+* #28	"UNIVERSIDAD DE LOS LAGOS"
+* #29	"UNIVERSIDAD DE MAGALLANES"
+* #30	"UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACIÓN"
+* #31	"UNIVERSIDAD DE SANTIAGO DE CHILE"
+* #32	"UNIVERSIDAD DE TALCA"
+* #33	"UNIVERSIDAD DE TARAPACÁ"
+* #34	"UNIVERSIDAD DE VALPARAÍSO"
+* #35	"UNIVERSIDAD DE VIÑA DEL MAR"
+* #36	"UNIVERSIDAD DEL BÍO-BÍO"
+* #37	"UNIVERSIDAD DEL MAR"
+* #38	"UNIVERSIDAD DEL DESARROLLO"
+* #39	"UNIVERSIDAD DEL PACÍFICO"
+* #40	"UNIVERSIDAD DIEGO PORTALES"
+* #41	"UNIVERSIDAD FINIS TERRAE"
+* #42	"UNIVERSIDAD IBEROAMERICANA DE CIENCIAS Y TECNOLOGÍA UNICIT"
+* #43	"UNIVERSIDAD LA REPÚBLICA"
+* #44	"UNIVERSIDAD DEL ALBA"
+* #45	"UNIVERSIDAD METROPOLITANA DE CIENCIAS DE LA EDUCACIÓN"
+* #46	"UNIVERSIDAD SAN SEBASTIÁN"
+* #47	"UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA"
+* #48	"UNIVERSIDAD TECNOLÓGICA DE CHILE INACAP"
+* #49	"UNIVERSIDAD SANTO TOMÁS"
+* #50	"UNIVERSIDAD TECNOLÓGICA METROPOLITANA"
+* #51	"UNIVERSIDAD MAYOR"
+* #52	"UNIVERSIDAD SEK"
+* #53	"UNIVERSIDAD GABRIELA MISTRAL"
+* #54	"UNIVERSIDAD MIGUEL DE CERVANTES"
+* #55	"UNIVERSIDAD BOLIVARIANA"
+* #56	"UNIVERSIDAD LOS LEONES"
+* #57	"INSTITUTO PROFESIONAL AIEP"
+* #58	"INSTITUTO PROFESIONAL DE CHILE"
+* #59	"INSTITUTO PROFESIONAL DIEGO PORTALES"
+* #60	"INSTITUTO PROFESIONAL DUOC UC"
+* #61	"INSTITUTO PROFESIONAL INACAP"
+* #62	"INSTITUTO PROFESIONAL VIRGINIO GÓMEZ"
+* #63	"INSTITUTO PROFESIONAL CARLOS CASANUEVA"
+* #64	"INSTITUTO PROFESIONAL LOS LEONES"
+* #65	"INSTITUTO PROFESIONAL VALLE CENTRAL"
+* #66	"INSTITUTO PROFESIONAL LATINOAMERICANO DE COMERCIO EXTERIOR, IPLACEX"
+
+
+
+
+ValueSet:  VSInstEmisorTit
+Id: VInstEmisorTit
+Title: "Institución Emisora de Título Profesional"
+Description: "Códigos de Centros Educacionales, Institutos, Universidades, etc que emiten certificados profesionles"
+
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system  CSInstEmisorTit
