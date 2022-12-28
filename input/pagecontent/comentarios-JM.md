@@ -17,5 +17,10 @@
 - no cuadran los codigos de las comunas, ni la cantidad de codigos, ni los codigos entre los que tenemos en la core vs deis
 - 
 
-## extension zona urbana o rural
-- 
+## extension zona urbana o rural OPCIONAL
+- generar un CS y un VS con 
+  - 1 Urbano
+  - 2 Rural
+
+## aparece comuna en la pagina 175 luego de anexo, asumo que debe ser geolocalizacion.
+
