@@ -108,6 +108,23 @@
 * *Nº de Registro Nacional de Prestadores Individuales* considerado en la identificación del Prestador-CL[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CorePrestadorCl.html]
 * La fecha de emisión de certificado es parte del perfil sin embargo y tal como se viera en la fecha de nacimiento por estandar el modelo de fecha es año-mes-dia, lo cual no es reemplazable
 * se crea extensión en caso de institución extranjera
+* el VS de Especialidades se encuentra en la Core en Códigos de Especialidades[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/CodeSystem-CSEspecialidadesDeisCL.html]
+* se crean las subespecialidades
+
+#### Prestadores Institucionales
+
+* para estos se podrá usar el perfil de la Core-CL Cl-Organizacion[https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CoreOrganizacionCl.html]
+* Se sugiere perfilar una *Organización Atención Abierta* y pefilar una *Organización Atención Cerrada*
+* Se genera CS y VS y extensión para nivel de atención
+
+### Identificación Establecimiento
+
+#### Código del Establecimiento
+
+* se requiere armar un VS y CS en base terminologica de este catálogo
+* direrección indicada en apartado geoespacial
+* fecha de inicio y de cierre no se ajusta al formato del estándar, se genera una extensión que se aplica a organization o location
+
 
 
 
