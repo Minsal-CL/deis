@@ -1,5 +1,5 @@
-Extension:   limiteUrbano
-Id:          limiteUrbano
+Extension:   LimiteUrbano
+Id:          LimiteUrbano
 Title:       "Limite urbano censal de la region"
 Description: "Limite urbano censal de la region"
 * value[x] only CodeableConcept
@@ -10,6 +10,87 @@ Description: "Limite urbano censal de la region"
   * code from VSCodigoLimiteUrbanoCL
   * system 0..1 MS
   * display 0..1 MS
+
+Extension:   DireccionCompleta
+Id:          DireccionCompleta
+Title:       "Direccion Completa"
+Description: "Direccion Completa"
+* extension contains 
+  NombreVia 1..1 MS and
+  AnexoDireccion 0..1 MS and
+  NumeroDireccion 1..1 MS and
+  tutId 1..1 MS and
+  CodigoPostal 0..1 MS and
+  TipoVia 0..1 MS
+* url MS
+* extension[TipoVia] ^short = "Tipo de via"
+* extension[TipoVia].value[x] only CodeableConcept
+* extension[TipoVia].url MS
+* extension[TipoVia].valueCodeableConcept 1..1 MS
+* extension[TipoVia].valueCodeableConcept.coding 1..1 MS
+* extension[TipoVia].valueCodeableConcept.coding.code from VSTipoViaCL (required)
+* extension[TipoVia].valueCodeableConcept.coding.code 1..1 MS
+* extension[TipoVia].valueCodeableConcept.coding.system 0..1 MS
+* extension[TipoVia].valueCodeableConcept.coding.display 0..1 MS
+
+* extension[NombreVia] ^short = "Nombre Via Dirección"
+* extension[NombreVia] ^definition = "Nombre Via Dirección"
+* extension[NombreVia] 1..1 MS
+* extension[NombreVia].url MS
+* extension[NombreVia].value[x] only string
+* extension[NombreVia].valueString 1..1 MS
+
+* extension[NumeroDireccion] ^short = "Numero Direccion"
+* extension[NumeroDireccion] ^definition = "Corresponde a la numeracion del domicilio"
+* extension[NumeroDireccion] 1..1 MS
+* extension[NumeroDireccion].url MS
+* extension[NumeroDireccion].value[x] only string
+* extension[NumeroDireccion].valueString 1..1 MS
+
+
+* extension[AnexoDireccion] ^short = "Anexo Direccion"
+* extension[AnexoDireccion] ^definition = "Es el dato de localización específico que aporta un mayor detalle o disgregación de una dirección"
+* extension[AnexoDireccion] 0..1 MS
+* extension[AnexoDireccion].url MS
+* extension[AnexoDireccion].value[x] only string
+* extension[AnexoDireccion].valueString 1..1 MS
+
+* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1 MS
+* extension[geolocalizacion] ^short = "Geolocalizacion"
+* extension[geolocalizacion] ^definition = "Sistemas de coordenadas que permite
+describir la posicion geoespacial de la ubicacion del paciente"
+* extension[geolocalizacion] 0..1 MS
+* extension[geolocalizacion].url MS
+* extension[geolocalizacion].extension[latitude].url 1..1
+* extension[geolocalizacion].extension[latitude] ^short = "lalala"
+* extension[geolocalizacion].extension[longitude] ^short = "lelele"
+* extension[geolocalizacion].extension[longitude].url 1..1  
+//* extension[geolocalizacion].longitude ^short = "asdf"
+
+* extension[CodigoPostal] ^short = "Codigo Postal"
+* extension[CodigoPostal] ^definition = "Es un código único de 7 dígitos que permite identificar y ubicar un área geográfica determinada. La información que proporciona el código postal, comienza con la comuna, para finalmente indicar el lado de la cuadra donde vive el destinatario."
+* extension[CodigoPostal] 0..1 MS
+* extension[CodigoPostal].url MS
+* extension[CodigoPostal].value[x] only string
+* extension[CodigoPostal].valueString 1..1 MS
+
+
+
+
+* extension[tutId] ^short = "Identificación del Tutor"
+* extension[tutId] ^definition = "Identificación del Tutor"
+* extension[tutId] 1..1 MS
+* extension[tutId].url MS
+* extension[tutId].value[x] only Identifier
+* extension[tutId].valueIdentifier 1..1 MS
+* extension[tutId].valueIdentifier.type 1..1 MS
+* extension[tutId].valueIdentifier.type.coding.code 1..1 MS
+* extension[tutId].valueIdentifier.type.coding.system 1..1 MS
+* extension[tutId].valueIdentifier.type.coding.display 0..1 MS
+* extension[tutId].valueIdentifier.system 1..1 MS
+* extension[tutId].valueIdentifier.value 1..1 MS
+
+//* extension[docProc].url = "docProc"
 
 
 /*

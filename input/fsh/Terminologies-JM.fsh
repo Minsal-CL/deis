@@ -1,7 +1,431 @@
+ValueSet: VSTipoDeAnestesiaCL
+Id: VSTipoDeAnestesiaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeAnestesiaCL
+
+CodeSystem: CSTipoDeAnestesiaCL
+Id: CSTipoDeAnestesiaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "General"
+* #2 "Troncular o Regional"
+* #3 "Epidural"
+* #4 "Local"
+* #5 "Sedación"
+
+
+ValueSet: VSTipoDeQuirofanoSegunUtilizacionCL
+Id: VSTipoDeQuirofanoSegunUtilizacionCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeQuirofanoSegunUtilizacionCL
+
+CodeSystem: CSTipoDeQuirofanoSegunUtilizacionCL
+Id: CSTipoDeQuirofanoSegunUtilizacionCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Quirófanos en dotación"
+* #2 "Quirófanos habilitados"
+* #3 "Quirófanos en trabajo"
+
+
+ValueSet: VSTipoDeQuirofanoCL
+Id: VSTipoDeQuirofanoCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeQuirofanoCL
+
+CodeSystem: CSTipoDeQuirofanoCL
+Id: CSTipoDeQuirofanoCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Electivo"
+* #2 "Urgencia"
+* #3 "Obstétrico"
+* #4 "Indiferenciado"
+
+ValueSet: VSTipoDeCirugiaMayorAmbulatoriaCL
+Id: VSTipoDeCirugiaMayorAmbulatoriaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeCirugiaMayorAmbulatoriaCL
+
+CodeSystem: CSTipoDeCirugiaMayorAmbulatoriaCL
+Id: CSTipoDeCirugiaMayorAmbulatoriaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "CMA Electiva"
+* #2 "CMA de Urgencia"
+
+ValueSet: VSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+Id: VSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+
+CodeSystem: CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+Id: CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Cirugía Menor"
+* #2 "Cirugía Mayor"
+
+ValueSet: VSTipodeIntervencionQuirurgicaCL
+Id: VSTipodeIntervencionQuirurgicaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipodeIntervencionQuirurgicaCL
+
+CodeSystem: CSTipodeIntervencionQuirurgicaCL
+Id: CSTipodeIntervencionQuirurgicaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Electiva"
+* #2 "Urgencia"
+* #3 "Emergencia"
+
+ValueSet: VSConsultaOdontologicaDeEspecialidadCL
+Id: VSConsultaOdontologicaDeEspecialidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSConsultaOdontologicaDeEspecialidadCL
+
+CodeSystem: CSConsultaOdontologicaDeEspecialidadCL
+Id: CSConsultaOdontologicaDeEspecialidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Primera consulta odontológica de especialidad o consulta nueva."
+* #2 "Consulta odontológica de especialidad de control o seguimiento."
+
+ValueSet: VSTipoDeConsultaMedicaGeneralCL
+Id: VSTipoDeConsultaMedicaGeneralCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeConsultaMedicaGeneralCL
+
+CodeSystem: CSTipoDeConsultaMedicaGeneralCL
+Id: CSTipoDeConsultaMedicaGeneralCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Primera consulta médica general o consulta nueva"
+* #2 "Consulta médica de control o seguimiento"
+
+ValueSet: VSTipoDeConsultaMedicaEspecialidadCL
+Id: VSTipoDeConsultaMedicaEspecialidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeConsultaMedicaEspecialidadCL
+
+CodeSystem: CSTipoDeConsultaMedicaEspecialidadCL
+Id: CSTipoDeConsultaMedicaEspecialidadCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Primera consulta médica de especialidad o consulta nueva de especialidad"
+* #2 "Consulta médica de control o seguimiento de especialidad"
+
+
+ValueSet: VSTipoDiagnosticoCL
+Id: VSTipoDiagnosticoCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDiagnosticoCL
+
+CodeSystem: CSTipoDiagnosticoCL
+Id: CSTipoDiagnosticoCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Presuntivo (Hipótesis diagnóstica)"
+* #2 "Confirmado"
+
+
+ValueSet: VSanamnesisCL
+Id: VSanamnesisCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSanamnesisCL
+
+CodeSystem: CSanamnesisCL
+Id: CSanamnesisCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Próxima"
+* #2 "Remota"
+ 
+ValueSet: VSTipoCodificacionDiagnosticaCL
+Id: VSTipoCodificacionDiagnosticaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoCodificacionDiagnosticaCL
+
+CodeSystem: CSTipoCodificacionDiagnosticaCL
+Id: CSTipoCodificacionDiagnosticaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "CIE10"
+* #2 "CIE11"
+
+
+ValueSet: VSTipoViaCL
+Id: VSTipoDeViaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoDeViaCL
+
+CodeSystem: CSTipoDeViaCL
+Id: CSTipoDeViaCL
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #1 "Calle"
+* #2 "Avenida"
+* #3 "Pasaje"
+* #4 "Camino"
+* #5 "Carretera"
+* #6 "Callejón"
+* #7 "Paseo"
+* #8 "Escalera"
+* #9 "Otro"
+* #10 "Rotonda"
+
+
 ValueSet: VSCodigoLimiteUrbanoCL
 Id: VSCodigoLimiteUrbanoCL
-Title: "Códigos de Provincias en Chile"
-Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Title: "Limite urbano Censal"
+Description:  "Limite urbano Censal"
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -15,8 +439,8 @@ Description:  "Códigos de Provincias para Chile según Códigos Únicos Territo
 
 CodeSystem: CSCodigoLimiteUrbanoCL
 Id: CSCodigoLimiteUrbanoCL
-Title: "Códigos de Provincias en Chile"
-Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Title: "Limite urbano Censal"
+Description:  "Limite urbano Censal"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
