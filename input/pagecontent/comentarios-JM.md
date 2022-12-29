@@ -34,8 +34,32 @@ Se recomienda utilizar el datatype addressCL de la guia Core, ya que posee los e
   - Geolocalizacion: No aparece, pero se agrega como una extension ya creada en HL7 FHIR, por tanto solo se referencia / http://hl7.org/fhir/R4/extension-geolocation.html
 
 
-## aparece comuna en la pagina 175 luego de anexo, asumo que debe ser geolocalizacion.
+# CAPITULO V: ESTÁNDARES DE PROCESO ASISTENCIAL
 
-## 1.7 Sistema de coordenadas
-- se utiliza la extension estandar de HL7 FHIR que ya se encuentra creada y se agrega dentro del elemento Address
-- 
+## Anamnesis
+
+## Diagnostico Clinico
+- Se usará el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl de la IG CoreCL
+- Se genera CS y VS con los datos de tipo de Diagonostico
+
+## Datos de Consultas Médicas 
+### Consulta Médica General
+- Se usará el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL
+- Se genera CS y VS con los datos de tipo de consulta medica general
+
+### Consulta Médica de especialidad
+- Se usará el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL
+- Se genera CS y VS con los datos de tipo de consulta medica de especialidad
+
+### Consulta odontologica especialidad
+- Se usará el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL
+- Se genera CS y VS con los datos de tipo de consulta odontologica especialidad
+
+### Consulta de urgencia
+- Se usará el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL
+- Hablan de consulta de urgencia y emergencia, pero solo dejan un texto libre, no se bien para que es, si para especificar el tipo de consulta de urgencia, o para especificar informacion de la consulta. en caso de ser la primera opcion, suguiero generar un CS y VS que especifique estos.
+- en caso de querer almacenar el tipo de consulta de urgencia se puede guardar en ***encounter.classHistory.class***
+
+## Definiciones otros tipos de Consultas
+- explican los tipos de consultas pero no hablan nada sobre como estos datos deberian almacenarce. Se propone guardarlos en el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL y generar un CS y VS con cada una de estas consultas. Se esta evaluando si agregarlo dentro de un elemento existente o generar una extension nueva.
+
