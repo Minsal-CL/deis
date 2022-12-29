@@ -63,3 +63,16 @@ Se recomienda utilizar el datatype addressCL de la guia Core, ya que posee los e
 ## Definiciones otros tipos de Consultas
 - explican los tipos de consultas pero no hablan nada sobre como estos datos deberian almacenarce. Se propone guardarlos en el recurso https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL de la IG CoreCL y generar un CS y VS con cada una de estas consultas. Se esta evaluando si agregarlo dentro de un elemento existente o generar una extension nueva.
 
+## Proceso quirúrgico en área de pabellones y quirófanos.
+- Se esta evaluando si el utilizar el recurso ***procedure*** para todos los datos como:
+  - evaluar la generacion de una extension para agregar toda la informacion referente a la intervencion
+    - 6.1 Tiempos del proceso quirúrgico en área de pabellones y quirófanos. Utilizar el elemento dateTime dentro el recurso antes mencionado
+    - 6.2 Intervención Quirúrgica / se crea el CS y VS con las opciones detallas y se agregan 
+      - 6.2.1 Tipo de Intervención Quirúrgica  / se crea el CS y VS con las opciones detallas y se agregan 
+      - 6.2.2 Tipo de Intervención quirúrgica según complejidad / se crea el CS y VS con las opciones detallas y se agregan 
+      - 6.2.3 Cirugía Mayor Ambulatoria (CMA) / se crea el CS y VS con las opciones detallas y se agregan 
+    - 6.3 Capacidad instalada y uso de los quirófanos 
+      - 6.3.1 Tipo de Quirófano / se crea el CS y VS con las opciones detallas y se agregan 
+      - 6.3.2 Tipo de Quirófano según utilización. / se crea el CS y VS con las opciones detallas y se agregan
+    - 6.4 Tipo de Anestesia / se crea el CS y VS con las opciones detallas y se agregan
+    - 6.5 Toma de biopsia  / se crea el CS y VS con las opciones detallas y se agregan (booleano)
