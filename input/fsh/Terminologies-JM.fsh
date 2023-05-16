@@ -1,7 +1,7 @@
 ValueSet: VSTipoDeAnestesiaCL
 Id: VSTipoDeAnestesiaCL
-Title: "Corresponde a la anestesia utilizada previa y durante la intervención quirúrgica"
-Description:  "Corresponde a la anestesia utilizada previa y durante la intervención quirúrgica"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -15,8 +15,8 @@ Description:  "Corresponde a la anestesia utilizada previa y durante la interven
 
 CodeSystem: CSTipoDeAnestesiaCL
 Id: CSTipoDeAnestesiaCL
-Title: "Corresponde a la anestesia utilizada previa y durante la intervención quirúrgica"
-Description:  "Corresponde a la anestesia utilizada previa y durante la intervención quirúrgica"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -32,12 +32,11 @@ Description:  "Corresponde a la anestesia utilizada previa y durante la interven
 * #4 "Local"
 * #5 "Sedación"
 
-/////////////////////////////////////////////////////////////
 
 ValueSet: VSTipoDeQuirofanoSegunUtilizacionCL
 Id: VSTipoDeQuirofanoSegunUtilizacionCL
-Title: "Clasificacion de quirofanos según disponibilidad"
-Description:  "Los quirófanos se pueden clasificar según disponibilidad"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -51,8 +50,8 @@ Description:  "Los quirófanos se pueden clasificar según disponibilidad"
 
 CodeSystem: CSTipoDeQuirofanoSegunUtilizacionCL
 Id: CSTipoDeQuirofanoSegunUtilizacionCL
-Title: "Clasificacion de quirofanos según disponibilidad"
-Description:  "Los quirófanos se pueden clasificar según disponibilidad"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -66,12 +65,11 @@ Description:  "Los quirófanos se pueden clasificar según disponibilidad"
 * #2 "Quirófanos habilitados"
 * #3 "Quirófanos en trabajo"
 
-//////////////////////////////////////////////////////////////////////////////
 
 ValueSet: VSTipoDeQuirofanoCL
 Id: VSTipoDeQuirofanoCL
-Title: "Tipo de Quirofano"
-Description:  "Tipo de Quirofano"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -85,8 +83,8 @@ Description:  "Tipo de Quirofano"
 
 CodeSystem: CSTipoDeQuirofanoCL
 Id: CSTipoDeQuirofanoCL
-Title: "Tipo de Quirofano"
-Description:  "Tipo de Quirofano"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -101,12 +99,10 @@ Description:  "Tipo de Quirofano"
 * #3 "Obstétrico"
 * #4 "Indiferenciado"
 
-/////////////////////////////////////////////////////////////////////////////
-
 ValueSet: VSTipoDeCirugiaMayorAmbulatoriaCL
 Id: VSTipoDeCirugiaMayorAmbulatoriaCL
-Title: "Cirugía Mayor Ambulatoria"
-Description:  "Cirugía Mayor Ambulatoria"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -120,8 +116,8 @@ Description:  "Cirugía Mayor Ambulatoria"
 
 CodeSystem: CSTipoDeCirugiaMayorAmbulatoriaCL
 Id: CSTipoDeCirugiaMayorAmbulatoriaCL
-Title: "Cirugía Mayor Ambulatoria"
-Description:  "Cirugía Mayor Ambulatoria"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -134,12 +130,10 @@ Description:  "Cirugía Mayor Ambulatoria"
 * #1 "CMA Electiva"
 * #2 "CMA de Urgencia"
 
-//////////////////////////////////////////////////////////////////
-
 ValueSet: VSTipoDeIntervencionQuirurgicaSegunComplejidadCL
 Id: VSTipoDeIntervencionQuirurgicaSegunComplejidadCL
-Title: "Tipo de intervencion quirurgica segun complejidad"
-Description:  "Tipo de intervencion quirurgica segun complejidad"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -153,8 +147,8 @@ Description:  "Tipo de intervencion quirurgica segun complejidad"
 
 CodeSystem: CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
 Id: CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
-Title: "Tipo de intervencion quirurgica segun complejidad"
-Description:  "Tipo de intervencion quirurgica segun complejidad"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -167,12 +161,10 @@ Description:  "Tipo de intervencion quirurgica segun complejidad"
 * #1 "Cirugía Menor"
 * #2 "Cirugía Mayor"
 
-/////////////////////////////////////////////////////////////////////////
-
 ValueSet: VSTipodeIntervencionQuirurgicaCL
 Id: VSTipodeIntervencionQuirurgicaCL
-Title: "Tipo de intervencion quirurgica"
-Description:  "Tipo de intervencion quirurgica"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -186,8 +178,8 @@ Description:  "Tipo de intervencion quirurgica"
 
 CodeSystem: CSTipodeIntervencionQuirurgicaCL
 Id: CSTipodeIntervencionQuirurgicaCL
-Title: "Tipo de intervencion quirurgica"
-Description:  "Tipo de intervencion quirurgica"
+Title: "Corresponde al tipo o clasificación de calle."
+Description:  "Corresponde al tipo o clasificación de calle."
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "1.0.0"
@@ -200,42 +192,6 @@ Description:  "Tipo de intervencion quirurgica"
 * #1 "Electiva"
 * #2 "Urgencia"
 * #3 "Emergencia"
-
-/////////////////////////////////////////////////////////////////////////
-
-ValueSet: VSBooleanoCL
-Id: VSBooleanoCL
-Title: "Booleano Si/No"
-Description:  "Booleano Si/No"
-* ^experimental = false
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSBooleanoCL
-
-CodeSystem: CSBooleanoCL
-Id: CSBooleanoCL
-Title: "Booleano Si/No"
-Description:  "Booleano Si/No"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-01-18T00:00:00-03:00"
-* ^contact.name = "HL7 Chile"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-* #1 "Si"
-* #2 "No"
-
-
-///////////////////////////////////////////////////////////
 
 ValueSet: VSConsultaOdontologicaDeEspecialidadCL
 Id: VSConsultaOdontologicaDeEspecialidadCL
