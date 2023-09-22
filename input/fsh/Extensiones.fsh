@@ -1,4 +1,4 @@
-
+/*
 Extension: NombreSocial
 Id: NombreSocial
 Title: "Nombre Social de Paciente"
@@ -329,3 +329,5 @@ Description: "Es la fecha en que el Prestador Institucional decide dejar de func
 * value[x] only dateTime
 * valueDateTime 1..1 MS
 * valueDateTime ^short = "fecha y hora de cese de funcionamiento"
+
+*/

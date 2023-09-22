@@ -92,118 +92,126 @@ describir la posicion geoespacial de la ubicacion del paciente"
 
 //* extension[docProc].url = "docProc"
 
-
-/*
-Extension: NombreSocial
-Id: NombreSocial
-Title: "Nombre Social de Paciente"
-Description: "Esta extensión permite agregar un nombre social al paciente"
-* value[x] only string
-* value[x] ^short = "Nombre Social del Paciente"
-
-
-Extension: NumeroVerificRUN
-Id: NumeroVerificRUN
-Title: "Dígito verificador RUN"
-Description: "Extensión para agregar el dígito verificador de un RUN"
-* value[x] only string
-* value[x] ^short = "Dígito Verificador RUN"
-
-
-Extension: FechaHoraNacimiento
-Id: FechaHoraNacimiento
-Title: "Fecha  hora de nacimiento para menores de 1 año"
-Description: "Formato de fecha y hora de nacimiento para recién nacidos menores de 1 año"
-* value[x] only dateTime
-* value[x] ^short = "Fecha y hora de nacimiento para menores de 1 año"
-
-Extension: SexoNacimiento820
-Id: SexoNacimiento820
-Title: "Sexo biológico al nacer"
-Description: "Extensión de Sexdo biológico al nacer para Chile"
-* value[x] only code
-* valueCode from VSSexoBiologico (required)
-* value[x] ^short = "Sexo biológico de  nacimiento"
-
-Extension: IdentidadGenero
-Id: IdentidadGenero
-Title: "Identidad de Género"
-Description: "Extensión para dato es de autoidentificación, por lo tanto, es una información que la persona entrega y el modelo de atención debe garantizar las condiciones y los mecanismos de privacidad y confidencialidad a través de un protocolo de aplicación local "
-* value[x] only code
-* valueCode from VSIdentidadGenero (required)
-* value[x] ^short = "Identidad de género del paciente"
-
-Extension:   PueblosIndigenas
-Id:          PueblosIndigenas
-Title:       "Extensión de Pueblos Indígenas u Origenarios"
-Description: "Se reconoce como pueblos indígenas u originarios en Chile a: mapuche, aymara, Rapanui, lickanantay, quechuas, colla, diaguitas, kawésqar, yagán y chango."
-* extension contains
-	Pueblos 0..* MS and
-	Otros 0..1 MS
+Extension:   InstExtranjeraEDu
+Id:          InstExtranjeraEDu
+Title:       "Determinación de Instutución extranjera de educación"
+Description: "Extensión que permite escribir en texto libre el nombre de una institución extranjera que otorgó certificado profesional"
 * url MS
-
-* extension[Pueblos] ^short = "Identificación de un Pueblo"
-* extension[Pueblos] ^definition = "Pueblo Indígena u Originario específico"
-* extension[Pueblos] 0..1 MS
-  * url MS
-  * value[x] only CodeableConcept
-  * valueCodeableConcept 1..1 MS
-    * coding.system = "CSPuebloIndigena"
-    * coding.code 1..1 MS
-    * coding.code from VSPuebloIndigena (required)
-    * coding.display 0..1 MS
-
-* extension[Otros] ^short = "Identificación de Otro pueblo Originario en texto libre"
-* extension[Otros].value[x] only string
-* extension[Otros].url MS
-
-Extension: PuebloTribal
-Id: PuebloTribal
-Title: "Pueblos Tribales"
-Description: "Extensión para Pueblos Tribales: Afrochileno o Afrodescendiente"
 * value[x] only string
-* value[x] ^short = "Texto libre definiendo al Pueblo determinado por el paciente"
+* valueString 1..1 MS
+* valueString ^short = "Nombre de Institución"
+  
 
-Extension:   ReligionesCultos
-Id:          PeligionesCultos
-Title:       "Extensión que define Religion o Culto"
-Description: "Información sobre la Religión o Credo declarada por el paciente"
+Extension:   NivelAtencion
+Id:          NivelAtencion
+Title:       "Nivel de Establecimiento de Salud"
+Description: "Extensión que permite determinar el nivel de atención del establecimiento de salud"
+* url MS
 * value[x] only CodeableConcept
-* value[x] ^short = "Código de la Religión o Culto"
 * valueCodeableConcept 1..1 MS
-  * coding.system = "CSReligion"
+  * coding.system = "CSNivelAtencion"
   * coding.code 1..1 MS
-  * coding.code from VSReligion (required)
-  * coding.display 0..1 MS
+  * coding.code from VSNivelAtencion (required)
+  * coding.display 1..1 MS
 
-
-Extension:   Discapacidad
-Id:          Discapacidad
-Title:       "Situación Discapacidad"
-Description: "Las personas en situación de discapacidad son personas que, en relación a sus condiciones de salud física, psíquica, intelectual, sensorial u otras, al interactuar con diversas barreras contextuales, actitudinales y ambientales, presentan restricciones en su participación plena y activa en la sociedad."
-* extension contains
-	ValDesemp 1..* MS and
-	EvalDesemp 1..1 MS
+Extension:   NivelComplejidad
+Id:          NivelComplejidad
+Title:       "Nivel de Establecimiento de Salud"
+Description: "Extensión que permite determinar el nivel de atención del establecimiento de salud"
 * url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSNivelComplejidad"
+  * coding.code 1..1 MS
+  * coding.code from VSNivelComplejidad (required)
+  * coding.display 1..1 MS
 
-* extension[EvalDesemp] ^short = "Evaluación de discapacidad daciente"
-* extension[EvalDesemp] ^definition = "Situación de discapacidad del paciente"
-//* extension[EvalDesemp] 0..1 MS
-  * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSEvalDesempComunDisca
-  * valueCode ^short = "Códigos de evaluación de discapacidad"
-    
+Extension:   TiposEstablecimientosPub
+Id:          TiposEstablecimientosPub
+Title:       "Tipos de establecimientos públicos"
+Description: "Corresponde a una estructura organizada, que posee un lugar, recursos humanos, financieros y materiales, para proporcionar todas o algunas de las acciones de promoción, protección, recuperación de la salud y rehabilitación a personas, familias o comunidades, ya sean en forma presencial o remota. Son autorizados sanitariamente por las SEREMIs y acreditados en cuanto a calidad por la Superintendencia de Salud"
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTiposEstablecimientos"
+  * coding.code 1..1 MS
+  * coding.code from VSTiposEstablecimientos (required)
+  * coding.display 1..1 MS
 
-* extension[ValDesemp] ^short = "Valoración de discapacidad paciente"
-* extension[ValDesemp] ^definition = "Valoración de discapacidad del paciente"
-//* extension[EvalDesemp] 0..1 MS
-  * url MS
-  * value[x] only code
-  * valueCode 1..1 MS
-  * valueCode from VSValDesempComunDisca
-  * valueCode ^short = "Códigos de valoración de discapacidad"
+Extension:   TiposEstablecimientosAPS
+Id:          TiposEstablecimientosAPS
+Title:       "Tipos de establecimientos atención primaria"
+Description: "Las acciones de salud de promoción, prevención, tratamiento y rehabilitación que les corresponde a los Servicios de Salud se proporcionan a través de la Atención Primaria"
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTiposEstablecimientosAPS"
+  * coding.code 1..1 MS
+  * coding.code from VSTiposEstablecimientosAPS (required)
+  * coding.display 1..1 MS
 
+Extension:   TiposEstablecimientosEsp
+Id:          TiposEstablecimientosEsp
+Title:       "Tipos de establecimientos atención de especialidad"
+Description: "Los Centros de Especialidad son establecimientos de atención ambulatoria que proporcionan atención de tipo diagnóstico y/o terapéutico vinculado a una determinada especialidad. Con personería jurídica y un director médico responsable, legalmente registrado"
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTiposEstablecimientosAPS"
+  * coding.code 1..1 MS
+  * coding.code from VSTiposEstablecimientosEsp (required)
+  * coding.display 1..1 MS
 
-*/
+Extension:   TiposEstablecimientosUrg
+Id:          TiposEstablecimientosUrg
+Title:       "Tipos de establecimientos atención de urgencia"
+Description: "Los establecimientos de urgencia otorgan atención médica inmediata o de emergencia a las personas que lo necesitan y que acuden a estos centros de salud en forma espontánea."
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTiposEstablecimientosUrg"
+  * coding.code 1..1 MS
+  * coding.code from VSTiposEstablecimientosUrg (required)
+  * coding.display 1..1 MS
+
+Extension:   TiposEstablecimientosHosp
+Id:          TiposEstablecimientosHosp
+Title:       "Tipos de establecimientos atención hospitalaria"
+Description: "Son establecimientos destinados a la atención de personas cuya condición física o mental demanda cuidados permanentes."
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSTiposEstablecimientosHosp"
+  * coding.code 1..1 MS
+  * coding.code from VSTiposEstablecimientosHosp (required)
+  * coding.display 1..1 MS
+
+Extension:   UnidadesMoviles
+Id:          UnidadesMoviles
+Title:       "Tipos de unidades móviles"
+Description: "Son unidades de atención que operan en territorios de acuerdo a un modelo de atención a la población, acercando las prestaciones en los lugares donde las personas viven, crecen y se desarrollan."
+* url MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+  * coding.system = "CSUnidadesMoviles"
+  * coding.code 1..1 MS
+  * coding.code from VSUnidadesMoviles (required)
+  * coding.display 1..1 MS
+
+Extension:   FechaApEstablec
+Id:          FechaApEstablec
+Title:       "Fecha de Apertura del establecimiento"
+Description: "El momento que inicia el funcionamiento el Prestador Institucional, es la fecha de inicio de la atención."
+* url MS
+* value[x] only dateTime
+* valueDateTime 1..1 MS
+* valueDateTime ^short = "fecha y hora de apertura"
+
+Extension:   FechaCeseEstablec
+Id:          FechaCeseEstablec
+Title:       "Fecha de Cese funcionamiento establecimiento"
+Description: "Es la fecha en que el Prestador Institucional decide dejar de funcionar, por diferentes razones. Esta información es proporcionada por el Prestador a la SEREMI respectiva."
+* url MS
+* value[x] only dateTime
+* valueDateTime 1..1 MS
+* valueDateTime ^short = "fecha y hora de cese de funcionamiento"
