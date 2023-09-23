@@ -1,0 +1,9 @@
+rm -rf hl7chile-ig-template/.index.db
+rm -rf hl7chile-ig-template/content/.index.db
+rm -rf hl7chile-ig-template/content/assets/.index.db
+rm -rf hl7chile-ig-template/content/assets/css/.index.db
+rm -rf hl7chile-ig-template/content/assets/ico/.index.db
+rm -rf hl7chile-ig-template/content/assets/images/.index.db
+rm -rf hl7chile-ig-template/includes/.index.db
+rm -rf hl7chile-ig-template/layouts/.index.db
+rm -rf hl7chile-ig-template/package/.index.db
