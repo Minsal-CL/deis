@@ -6,7 +6,7 @@ Id: VSNivelAtencion
 Title: "Nivel Atención Establecimiento de Salud"
 Description: "Códigos de Nivel Atención Establecimiento de Salud"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -20,7 +20,7 @@ Id: CSNivelComplejidad
 Title: "Nivel Complejidad Establecimiento de Salud"
 Description: "Códigos de Nivel Complejidad Establecimiento de Salud"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -39,7 +39,7 @@ ValueSet:  VSNivelComplejidad
 Id: VSNivelComplejidad
 Title: "Nivel Complejidad Establecimiento de Salud"
 Description: "Códigos de Nivel Complejidad Establecimiento de Salud"
-* ^experimental = true
+* ^experimental = false
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -53,7 +53,7 @@ Id: CSTiposEstablecimientos
 Title: "Tipos de establecimientos públicos"
 Description: "Códigos para determinar el tipo de establecimiento de salud en el sector público"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -75,6 +75,7 @@ Id: VSTiposEstablecimientos
 Title: "Tipos de establecimientos públicos"
 Description: "Códigos para determinar el tipo de establecimiento de salud en el sector público"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -87,7 +88,7 @@ Id: CSTiposEstablecimientosAPS
 Title: "Tipos de establecimientos atención primaria"
 Description: "Códigos para determinar el tipo de establecimiento de atención primaria"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -107,6 +108,7 @@ Id: VSTiposEstablecimientosAPS
 Title: "Tipos de establecimientos atención primaria"
 Description: "Códigos para determinar el tipo de establecimiento de atención primaria"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -119,7 +121,7 @@ Id: CSTiposEstablecimientosEsp
 Title: "Tipos de establecimientos atención de especialidad"
 Description: "Códigos para determinar el tipo de establecimiento de atención de especialidad"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -139,6 +141,7 @@ Id: VSTiposEstablecimientosEsp
 Title: "Tipos de establecimientos atención de especialidad"
 Description: "Códigos para determinar el tipo de establecimiento de especialidad"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -151,7 +154,7 @@ Id: CSTiposEstablecimientosUrg
 Title: "Tipos de establecimientos atención de urgencia"
 Description: "Códigos para determinar el tipo de establecimiento de atención de urgencia"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -172,6 +175,7 @@ Id: VSTiposEstablecimientosUrg
 Title: "Tipos de establecimientos atención de especialidad"
 Description: "Códigos para determinar el tipo de establecimiento de especialidad"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -185,7 +189,7 @@ Id: CSTiposEstablecimientosHosp
 Title: "Tipos de establecimientos atención de hospitalaria"
 Description: "Códigos para determinar el tipo de establecimiento de atención de hospitalaria"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -205,6 +209,7 @@ Id: VSTiposEstablecimientosHosp
 Title: "Tipos de establecimientos atención de hospitalaria"
 Description: "Códigos para determinar el tipo de establecimiento de atrención hospitalaria"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -217,7 +222,7 @@ Id: CSUnidadesMoviles
 Title: "Unidades Móviles"
 Description: "Códigos para determinar unidades móviles"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -234,6 +239,7 @@ ValueSet:  VSUnidadesMoviles
 Id: VSUnidadesMoviles
 Title: "Unidades Móviles"
 Description: "Códigos para determinar unidades móviles"
+* ^experimental = false
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -247,7 +253,7 @@ Id: CSTipoEstPriv
 Title: "Tipos de Establecimientos de Salud Privada"
 Description: "Códigos para determinar Tipos de Establecimientos de Salud Privada"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -272,6 +278,7 @@ Id: VSTipoEstPriv
 Title: "Tipos de Establecimientos de Salud Privada"
 Description: "Códigos para determinar Tipos de Establecimientos de Salud Privada"
 * ^date = "2022-01-18T00:00:00-03:00"
+* ^experimental = false
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
@@ -1241,3 +1248,77 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * #15201 "PUTRE"
 * #15202 "GENERAL LAGOS"
 * #99999 "DESCONOCIDA"
+
+/*
+CSanamnesisCL
+CSCodComunasCL
+CSCodigoLimiteUrbanoCL
+CSCodProvinciasCL
+CSCodRegionCL
+CSConsultaOdontologicaDeEspecialidadCL
+CSNivelComplejidad
+CSTipoCodificacionDiagnosticaCL
+CSTipoDeAnestesiaCL
+CSTipoDeCirugiaMayorAmbulatoriaCL
+CSTipoDeConsultaMedicaEspecialidadCL
+CSTipoDeConsultaMedicaGeneralCL
+CSTipodeIntervencionQuirurgicaCL
+CSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+CSTipoDeQuirofanoCL
+CSTipoDeQuirofanoSegunUtilizacionCL
+CSTipoDeViaCL
+CSTipoDiagnosticoCL
+CSTipoEstPriv
+CSTiposEstablecimientos
+CSTiposEstablecimientosAPS
+CSTiposEstablecimientosEsp
+CSTiposEstablecimientosHosp
+CSTiposEstablecimientosUrg
+CSUnidadesMoviles
+VSanamnesisCL
+VSCodigoLimiteUrbanoCL
+VSCodigosComunaCL
+VSCodigosProvinciasCL
+VSConsultaOdontologicaDeEspecialidadCL
+VSNivelAtencion
+VSNivelComplejidad
+VSTipoCodificacionDiagnosticaCL
+VSTipoDeAnestesiaCL
+VSTipoDeCirugiaMayorAmbulatoriaCL
+VSTipoDeConsultaMedicaEspecialidadCL
+VSTipoDeConsultaMedicaGeneralCL
+VSTipodeIntervencionQuirurgicaCL
+VSTipoDeIntervencionQuirurgicaSegunComplejidadCL
+VSTipoDeQuirofanoCL
+VSTipoDeQuirofanoSegunUtilizacionCL
+VSTipoDeViaCL
+VSTipoDiagnosticoCL
+VSTipoEstPriv
+VSTiposEstablecimientos
+VSTiposEstablecimientosAPS
+VSTiposEstablecimientosEsp
+VSTiposEstablecimientosHosp
+VSTiposEstablecimientosUrg
+VSUnidadesMoviles
+*/
+
+/*cesar*/
+
+CodeSystem:  CSNivelAtencion
+Id: CSNivelAtencion
+Title: "Nivel Atención Establecimiento de Salud"
+Description: "Códigos de Nivel Atención Establecimiento de Salud"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #NAP	"Nivel Primario"
+* #NAS	"Nivel Secundario "
+* #NAT	"Nivel Terciario"
+* #95	"No aplica"

@@ -215,3 +215,27 @@ Description: "Es la fecha en que el Prestador Institucional decide dejar de func
 * value[x] only dateTime
 * valueDateTime 1..1 MS
 * valueDateTime ^short = "fecha y hora de cese de funcionamiento"
+
+/*
+DireccionCompleta
+FechaApEstablec
+FechaCeseEstablec
+InstExtranjeraEDu
+LimiteUrbano
+NivelAtencion
+NivelComplejidad
+TiposEstablecimientosAPS
+TiposEstablecimientosEsp
+TiposEstablecimientosHosp
+TiposEstablecimientosPub
+TiposEstablecimientosUrg
+UnidadesMoviles
+*/
+
+/*cesar files*/
+Extension: NombreSocial
+Id: NombreSocial
+Title: "Nombre Social de Paciente"
+Description: "Esta extensión permite agregar un nombre social al paciente"
+* value[x] only string
+* value[x] ^short = "Nombre Social del Paciente"
