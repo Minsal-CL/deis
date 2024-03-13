@@ -3,29 +3,30 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.deis321
-canonical: https://hl7chile.cl/fhir/ig/deis321
-name: DEIS-321
-title: Guía de Implementación DExe 321-Reemplaza 820 DEIS
-# description: Norma 321 llevada a formato FHIR para la su aplicación en los formatos de elementos de datos, extensiones y tablas maestras
+id: hl7.fhir.cl.minsal.eis
+canonical: https://interoperabilidad.minsal.cl/fhir/ig/eis
+name: EstandaresdeInformaciondeSalud 
+
+title: Guía de Estandares de Informacionde Salud
+description: "Esta Guía de Estandares de Informacionde Salud desarrolla el Decreto Excento 231 del DEIS que reemplaza la norma técnica 820, y tiene como finalidad determinar compatibilidad de esta con el estándar FHIR"
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.1.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2022+
+copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
-
-date: 2022-12
+date: 2024-03
 publisher:
-  name: HL7 Chile
-  url: http://hl7chile.cl
-  email: chair@hl7chile.cl
+  name: Unidad de Interoperabilidad - MINSAL
+  url: https://interoperabilidad.minsal.cl
 
-description: "Esta Guía desarrolla el Decreto Excento 321 del DEIS que reemplaza la norma técnica 820, y tiene como finalidad determinar compatibilidad de esta con el estándar FHIR"
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
+
 dependencies:
   hl7.fhir.cl.clcore: 1.8.5
+
+
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -74,7 +75,7 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   # comentarios1: comentarios.html
- 
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
