@@ -25,7 +25,7 @@ publisher:
 description: "Esta Guía desarrolla el Decreto Excento 321 del DEIS que reemplaza la norma técnica 820, y tiene como finalidad determinar compatibilidad de esta con el estándar FHIR"
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 dependencies:
-  hl7.fhir.cl.corecl: 1.7.0
+  hl7.fhir.cl.corecl: 1.8.5
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
