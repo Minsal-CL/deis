@@ -1,3 +1,4 @@
+/*
 Profile: DEISNombre
 Parent: HumanName
 Id: deis-name
@@ -24,4 +25,4 @@ Description: "Tipo relacionado con el formato en que se define un nombre según 
 * given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre. Solo se obliga primer nombre"
 
 * extension contains NombreSocial named social 0..1 MS
-  
+*/

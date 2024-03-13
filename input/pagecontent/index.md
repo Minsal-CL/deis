@@ -1,3 +1,27 @@
-# DEIS-820-22
+# Lorem Ipsum
 
 Feel free to modify this index page with your own awesome content!!!
+
+### Dependencias, versiones y propiedad intelectual
+
+#### Dependencias
+
+{% include dependency-table.xhtml %}
+
+#### Analisis de versiones cruzadas
+
+{% include cross-version-analysis.xhtml %}
+
+#### Perfiles globales
+
+{% include globals-table.xhtml %}
+
+#### Declaracion de propiedad intelectual
+
+{% include ip-statements.xhtml %}
+
+#### Declaracion de propiedad intelectualppppppp
+
+{% include table-extensions.xhtml %}
+
+{% include ip-statements.xhtml %}
