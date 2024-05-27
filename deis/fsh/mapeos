@@ -1,8 +1,0 @@
-Mapping: SexoBiologicoDEIS
-Id: SexoBiologicoDEIS
-Title: "Mapeo entre Sexo Biológico y Gender de FHIR"
-Description: "Mapeo entre los códigos del sexo biológico en la 820 y el "
-Source: VSSexoBiologico
-
-
-* datosNotificacionGeneral.datosNotificacion.nombreOrganizacionNotificadora -> "NN.identifier"
