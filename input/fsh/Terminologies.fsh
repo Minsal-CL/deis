@@ -12,7 +12,9 @@ Description: "Tipos de Documentos para identificación según tabla 820."
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+
 * codes from system CSTiposDocumentosDEIS
+
 
 CodeSystem:  CSTiposDocumentosDEIS
 Id: CSTiposDocumentosDEIS
@@ -28,12 +30,13 @@ Description: "Set de códigos de identificación DEIS"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "RUN"
-* #2 "RUN Materno/progenitor (a)"
-* #3 "Número de Folio del Comprobante de Parto"
-* #4 "Número de Pasaporte"
-* #5 "Número de Documento identificador país de origen"
-* #6 "Número de Identificador FONASA"
+* #1 "RUN" "Valor Cédula de Identidad Nacional"
+* #2 "RUN Materno/progenitor(a)" "RUN de Progenitora para casos de recién nacidos"
+* #3 "Número de Folio del Comprobante de Parto" "Número de Folio que posee el comprobante de parto, el cual acredita el nacimiento de un hijo o hija"
+* #4 "Número de Pasaporte" "Este documento es válido cuando la persona es extranjera o no tiene otro medio de identificación"
+* #5 "Número de Documento identificador país de origen" "Se utiliza para almacenar el numero asociado al documento de identificación del país de origen"
+* #6 "Número de Identificador FONASA" "Es un número provisorio, que cuenta con la estructura de RUN, emitido por FONASA, de carácter provisorio para la identificación de personas extranjeras cotizantes con visa en trámite o personas extranjeras indocumentadas"
+
 
 /********************************************************/
 
@@ -2347,3 +2350,41 @@ Description: "ConsultaOdontoEspecialidad"
 * #2 "Consulta odontológica de especialidad de control o seguimiento "
 
 /********************************************************/
+
+CodeSystem:  CSIdentidadGenero
+Id: CSIdentidadGenero
+Title: "Códigos para Identidad de Género"
+Description: "Códigos para Identidad de Género DEIS"
+* ^caseSensitive = true
+* ^experimental = true //dependera del uso que le den al codesystem
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Masculino" "La persona de sexo Hombre asignado al nacer, que se identifica a sí misma como de género masculino. También se le conoce como cisgénero masculino"
+* #2 "Femenina" "La persona de sexo “ujer asignado al nacer, que se identifica a sí misma como de género femenina. También se le conoce como cisgénero femenina"
+* #4 "Transgénero Masculino" "La persona de sexo Mujer asignado al nacer, que se identifica a sí misma como de género masculino."
+* #5 "Transgénero Femenina" "La persona de sexo Hombre asignado al nacer, que se identifica a sí misma como de género femenina." 
+* #6 "No binarie" "La persona que no se identifica con ninguno de los géneros convencionales (femenina o masculino)."
+* #7 "Otra" "Otra identidad de género no descrita previamente."
+* #8 "No Revelado" "La persona no desea revelar su identidad de género"
+
+
+ValueSet: VSIdentidadGenero
+Id: VSIdentidadGenero
+Title: "Identidad de Género"
+Description: "Códigos para Identidad de Género DEIS"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSIdentidadGenero
