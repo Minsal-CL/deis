@@ -23,8 +23,8 @@ publisher:
 
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 
-dependencies:
-  hl7.fhir.cl.clcore: 1.8.5
+# dependencies:
+#   hl7.fhir.cl.clcore: 1.8.5
 
 
 #

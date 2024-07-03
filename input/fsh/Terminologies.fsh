@@ -479,11 +479,11 @@ Description: "TipoOtroTelefono"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Del Trabajo de la persona"
-* #02 "Pareja o cónyuge"
-* #03 "Familiar"
-* #04 "Tutor(a) o Cuidador(a)"
-* #05 "Vecino(a)"
+* #1 "Del Trabajo de la persona"
+* #2 "Pareja o cónyuge"
+* #3 "Familiar"
+* #4 "Tutor(a) o Cuidador(a)"
+* #5 "Vecino(a)"
 * #98 "No responde"
 
 /********************************************************/
