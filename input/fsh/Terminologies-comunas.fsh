@@ -1,4 +1,4 @@
-ValueSet: VSCodigosComunaCL
+/*ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
@@ -387,7 +387,7 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * #15202 "GENERAL LAGOS"
 * #99999 "DESCONOCIDA"
 
-
+*/
 /********************************************************/
 ValueSet: VSComunas
 Id: VSComunas
