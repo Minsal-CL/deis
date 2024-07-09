@@ -20,8 +20,5 @@ Feel free to modify this index page with your own awesome content!!!
 
 {% include ip-statements.xhtml %}
 
-#### Declaracion de propiedad intelectualppppppp
+<!--{% include table-extensions.xhtml %}-->
 
-{% include table-extensions.xhtml %}
-
-{% include ip-statements.xhtml %}

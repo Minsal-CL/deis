@@ -412,7 +412,7 @@ Description: "Código asociados a el detalle de las ocupaciones de un paciente"
 
 CodeSystem:  CSPrevision
 Id: CSPrevision
-Title: "PRevisión Salud"
+Title: "Previsión Salud"
 Description: "Código asociados al tipo de previsión a la que el paciente pertenece"
 * ^caseSensitive = true
 * ^experimental = true //dependera del uso que le den al codesystem
@@ -1602,12 +1602,12 @@ Description: "RegionVSRegion"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSRegionVSRegion
+* codes from system CSRegion
 
-CodeSystem: CSRegionVSRegion
-Id: CSRegionVSRegion
-Title: "RegionVSRegion"
-Description: "RegionVSRegion"
+CodeSystem: CSRegion
+Id: CSRegion
+Title: "Regiones"
+Description: "Regiones de Chile"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -1839,8 +1839,8 @@ Description: "Anamnesis"
 
 ValueSet: VSDiagnostico
 Id: VSDiagnostico
-Title: "Diagnostico"
-Description: "Diagnostico"
+Title: "Diagnóstico"
+Description: "Diagnóstico"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -1854,8 +1854,8 @@ Description: "Diagnostico"
 
 CodeSystem: CSDiagnostico
 Id: CSDiagnostico
-Title: "Diagnostico"
-Description: "Diagnostico"
+Title: "Diagnóstico"
+Description: "Diagnóstico"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
