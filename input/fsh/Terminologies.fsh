@@ -1866,7 +1866,7 @@ Description: "Diagnóstico"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 " Presuntivo (Hipótesis diagnóstica)"
+* #1 "Presuntivo (Hipótesis diagnóstica)"
 * #2 "Confirmado"
 
 /********************************************************/
