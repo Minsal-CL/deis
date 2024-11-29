@@ -1,0 +1,15 @@
+{
+    "package-id": "hl7.fhir.cl.minsal.eis",
+    "version": "0.1.1",
+    "desc": "Esta Guía de Estandares de Informacionde Salud desarrolla el Decreto Excento 231 del DEIS que reemplaza la norma técnica 820, y tiene como finalidad determinar compatibilidad de esta con el estándar FHIR",
+    "changes": "changes.html",
+    "status": "draft",
+    "sequence": "STU1",
+    "mode": "working",
+    "first": true,
+    "category": "Terminology",
+    "title": "Guía de Estandares de Informacionde Salud",
+    "introduction": "Historico de la Guía de Estandares de Informacionde Salud",
+    "ci-build": "https://build.fhir.org/ig/Minsal-CL/eis/",
+    "fhirversion": "4.0.1"
+}

@@ -98,7 +98,7 @@ Description: "El estado civil es la situación de un individuo en la sociedad, q
 
 CodeSystem:  CSPueblosOriginarios
 Id: CSPueblosOriginarios
-Title: "Pueblo Indígena u Originarioi"
+Title: "Pueblo Indígena u Originarios"
 Description: "Los Pueblos Indígenas u Originarios en Chile, son los descendientes de las agrupaciones humanas que existen en el territorio nacional desde tiempos precolombinos"
 * ^caseSensitive = true
 * ^experimental = true //dependera del uso que le den al codesystem
@@ -341,7 +341,7 @@ Description: "Categoría del último curso aprobado"
 
 ValueSet: VSCondiciondelaActividad
 Id: VSCondiciondelaActividad
-Title: "CondiciondelaActividad"
+Title: "Condicion de la Actividad"
 Description: "CondiciondelaActividad"
 * ^experimental = false
 * ^version = "0.1"
